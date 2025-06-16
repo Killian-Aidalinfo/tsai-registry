@@ -76,7 +76,7 @@ yargs(hideBin(process.argv))
     'Create a local settings-registry.json file',
     () => {},
     async () => {
-      const defaultPath = 'src/mastra/registry';
+      const defaultPath = 'src/registry';
       const input = await prompt(`Local registry path [${defaultPath}]: `);
       const localPath = input.trim() || defaultPath;
       const filePath = path.join(process.cwd(), 'settings-registry.json');
